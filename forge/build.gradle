@@ -46,7 +46,7 @@ group = "${maven_group}"
 archivesBaseName = "${archives_base_name}"
 
 println("Specifying Java compatibility...")
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 println("Java Installation Data:")
 println(" - Java Version: " + System.getProperty('java.version'))
