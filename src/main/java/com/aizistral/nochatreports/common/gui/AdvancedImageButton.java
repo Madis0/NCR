@@ -42,7 +42,7 @@ public class AdvancedImageButton extends ImageButton {
 		graphics.blitSprite(this.getCurrentTexture(), this.getX(), this.getY(), this.width, this.height);
 
 		if (this.isHovered)
-			if (this.tooltip instanceof AdvancedTooltip tooltip && tooltip.hasCustomRender()) {
+			if (this.getTooltip() instanceof AdvancedTooltip tooltip && tooltip.hasCustomRender()) {
 				tooltip.doCustomRender(this.parent, graphics, mouseX, mouseY, tooltip.createTooltipPositioner(
 						this.isHovered(), this.isFocused(), this.getRectangle()));
 			}

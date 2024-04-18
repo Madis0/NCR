@@ -46,7 +46,7 @@ public class MixinPlayerEntry {
 			this.reportButton = new AdvancedImageButton(0, 0, 20, 20, SwitchableSprites.of(REPORT_BUTTON_SPRITES),
 					button -> {}, Component.translatable("gui.socialInteractions.report"), screen);
 			this.reportButton.setTooltip(Tooltip.create(NCR_BUTTON_TOOLTIP));
-			this.reportButton.setTooltipDelay(10);
+			this.reportButton.setTooltipDelay(java.time.Duration.ofSeconds(10));
 			this.reportButton.active = false;
 		}
 	}
